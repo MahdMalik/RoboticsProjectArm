@@ -9,7 +9,7 @@ from lerobot.motors.motors_bus import MotorCalibration
 # ------------------------------------------------------------
 # Configuration
 # ------------------------------------------------------------
-PORT = "COM46"
+PORT = "/dev/ttyACM0"
 CALIBRATION_FILE = "include/robot-config.json"
 
 MODE = "timed"          # "timed" = change position every INTERVAL s, "keys" = press a key
