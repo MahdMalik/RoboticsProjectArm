@@ -45,7 +45,7 @@ class ArduinoComm:
 serialComm = ArduinoComm(BAUD_RATE, PORT)
 
 
-serialComm.SendPacket(SentPacketType.MOVE_FORWARD, [0x67])
+serialComm.SendPacket(SentPacketType.HANDSHAKE, [0x67])
 
 packetType, parameter = serialComm.ReceivePacket()
 
