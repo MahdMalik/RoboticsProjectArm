@@ -3,7 +3,7 @@ from enum import IntEnum
 import time
 
 BAUD_RATE = 115200
-PORT = "/dev/ttyACM0"
+PORT = "/dev/ttyUSB0"
 
 class SentPacketType(IntEnum):
     HANDSHAKE = 0x00
@@ -45,7 +45,8 @@ class ArduinoComm:
 serialComm = ArduinoComm(BAUD_RATE, PORT)
 
 
-serialComm.SendPacket(SentPacketType.MOVE_FORWARD, [0x67])
+print("Setup done!")
+serialComm.SendPacket(SentPacketType.HANDSHAKE, [0x67])
 
 packetType, parameter = serialComm.ReceivePacket()
 
