@@ -3,7 +3,7 @@ TO RUN:
 If controlling from a computer:
 - do git clone as normal
 - make a virtual environment in the repo, do "pip install torch torchvision" and "pip install -e ".[core_scripts,feetech]"
-- when trying to find the correct port, first run "lerobot-find-port", follow the instructions ans it'll tell you what com port it's on. No calibration stuff needs to be done
+- when trying to find the correct port, first run "lerobot-find-port", follow the instructions and it'll tell you what com port it's on. No calibration stuff needs to be done
 - finally to test, just run the python file in src/robotics/motor-test.py
 
 
